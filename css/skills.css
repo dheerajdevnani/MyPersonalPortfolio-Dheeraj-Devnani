@@ -1,0 +1,121 @@
+.c-fancy-cards-group {
+    /* scrollbar-color: #201c29; */
+    /* scrollbar-width: 10px; */
+    /* scrollbar-gutter: always; */
+    padding: 3rem;
+    padding-top: none;
+    /* padding-top: 15rem; */
+    padding-bottom: 15rem;
+    display: flex;
+    max-width: 100vw;
+    /* margin: auto; */
+    padding-left: 15rem;
+    /* overflow-x: scroll; */
+    -webkit-overflow-scrolling: touch;
+}
+
+.skilltxt {
+    /* margin-left: 40vw; */
+    text-align: center;
+    /* transform: translateX(-5%); */
+    margin-top: 10vh;
+    /* top: 5rem; */
+    color: #a52a2a;
+    animation: flicker 15s infinite alternate;
+    animation-delay: 1s;
+}
+
+@media (max-width:800px) {
+    .skills {
+        visibility: hidden;
+        height: 0vh;
+    }
+
+    .project {
+        margin-top: -40rem;
+    }
+
+    .story {
+        padding-bottom: 30rem;
+    }
+}
+
+.skills {
+    background: linear-gradient(rgba(23, 41, 61, 0.361), rgba(22, 40, 61, 0.308)), url("../Img1/bg2.jpg");
+    margin-top: -20rem;
+    padding-top: 25vh;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+
+    /* margin-bottom: 20vh; */
+    -webkit-clip-path: polygon(50% 20%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
+    clip-path: polygon(50% 20%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
+
+    z-index: -1000;
+    /* padding-bottom: 10rem; */
+}
+
+.c-fancy-card {
+    position: relative;
+    min-width: 20vw;
+    min-height: 350px;
+    max-width: 20vw;
+    margin: 0;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: #1b1b1b;
+    box-shadow: -1rem 0 3rem #000;
+    color: white;
+    transition: 0.2s;
+}
+
+.c-fancy-card h4 {
+    font-size: .9rem;
+}
+
+.c-fancy-card:not(:first-child) {
+    margin-left: -130px;
+}
+
+.c-fancy-card:hover {
+    transform: translate(0, -1rem);
+    cursor: crosshair;
+}
+
+.c-fancy-card:nth-child(1) {
+
+    background: linear-gradient(rgba(16, 29, 44, 0.096), rgba(16, 29, 44, 0.11)), url("../skillsimg/C++.png");
+    background-size: cover;
+}
+
+.c-fancy-card:nth-child(2) {
+
+    background: linear-gradient(rgba(16, 29, 44, 0.652), rgba(16, 29, 44, 0.617)), url("../skillsimg/css.jpg");
+    background-size: cover;
+}
+
+.c-fancy-card:nth-child(3) {
+
+    background: linear-gradient(rgba(16, 29, 44, 0.461), rgba(16, 29, 44, 0.427)), url("https://img-c.udemycdn.com/course/480x270/5288580_6095.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    /* height: 100vh;
+    margin: 0; */
+}
+
+.c-fancy-card:nth-child(5) {
+
+    background: linear-gradient(rgba(16, 29, 44, 0.539), rgba(16, 29, 44, 0.487)), url("../skillsimg/learn.jpg");
+    background-size: cover;
+}
+
+.c-fancy-card:nth-child(4) {
+
+    background: linear-gradient(rgba(16, 29, 44, 0.096), rgba(16, 29, 44, 0.11)), url("../skillsimg/wp7250222.jpg");
+    background-size: cover;
+}
+
+.c-fancy-card:hover+.c-fancy-card {
+    margin-left: 0;
+}

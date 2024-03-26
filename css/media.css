@@ -1,0 +1,33 @@
+@media (max-width:570px) {
+    body {
+        font-size: 50%;
+    }
+
+    #line2 {
+        scale: 1.75;
+        padding-right: 1rem;
+        /* transform: translateX(-60%); */
+    }
+
+    .herotxt {
+        font-size: 60px;
+    }
+
+}
+
+@media(max-width:550px) {
+    #line2 {
+        /* scale: 1.24; */
+        font-size: medium;
+        transform: translate(-25%, -175%);
+        /* right: 60%; */
+        /* padding-right: none; */
+        /* padding-right: 1rem */
+        /* transform: translateX(-60%); */
+    }
+
+    .herotxt {
+        font-size: 50px;
+    }
+
+}
